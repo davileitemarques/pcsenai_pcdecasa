@@ -17,10 +17,10 @@ divisao <- numeroum / numerodois
 multiplicacao <- numeroum * numerodois
 
 escreval("Soma: ", adicao:0:2)
-escreval("Subtração: ", subtracao:0:2)
-escreval("Divisão: ", divisao:0:2)
-escreval("Multiplicação: ", multiplicacao:0:2)
+escreval("Subtraï¿½ï¿½o: ", subtracao:0:2)
+escreval("Divisï¿½o: ", divisao:0:2)
+escreval("Multiplicaï¿½ï¿½o: ", multiplicacao:0:2)
 senao
-escreva("Nao foi possivel efetuar a operação")
+escreva("Nao foi possivel efetuar a operaï¿½ï¿½o")
 fimse
 fimalgoritmo
