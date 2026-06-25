@@ -17,4 +17,3 @@ total_final = salario_final + comissao_carros
 #Saida de dados
 print(f"O salario final é: {total_final:.2f}")
 
-
