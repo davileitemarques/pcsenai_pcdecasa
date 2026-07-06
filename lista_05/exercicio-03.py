@@ -1,3 +1,4 @@
+
 c_empregado = int(input("Digite o seu codigo de empregado: "))
 ano_nasc = int(input("Digite o seu ano de nascimento: "))
 ingresso = int(input("Digite o seu ano de ingresso na empresa: "))
