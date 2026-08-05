@@ -1,10 +1,15 @@
 
-total = 0
-
 inicial = float(input("Digite o deposito inicial na sua poupança: "))
 taxa = float(input("Digite a taxa de juros da poupança: "))
 
-for i in range(1, 25):
-    print(f"MES {i}")
-    inicial += (1 + taxa / 100)
-    print(f"O valor total desse mes é de R${inicial}")
+contador = 1
+saldo = inicial
+decimal = taxa / 100
+
+while contador <= 24:
+    saldo = saldo + (decimal * saldo)
+    print(f"Mes {contador} saldo: {saldo:.2f}")
+    contador += 1
+
+juros = saldo - inicial
+print(f"O juros é de R${juros}")
