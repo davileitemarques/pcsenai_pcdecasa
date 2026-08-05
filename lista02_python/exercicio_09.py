@@ -1,15 +1,19 @@
-#Pede ao usuario pra que digite o deposito inicial e a taxa de juros
+
 inicial = float(input("Digite o deposito inicial na sua poupança: "))
+mes = float(input("Digite o valor depositado mensalmente: "))
 taxa = float(input("Digite a taxa de juros da poupança: "))
-#Atribui o contador pra que o While funcione, o saldo e coloca a taxa em decimal
+
+total = inicial
 contador = 1
 saldo = inicial
 decimal = taxa / 100
-#Faz o loop usando a variavel contador, calcula o saldo e o imprime na tela do usuario
+ 
 while contador <= 24:
-    saldo = saldo + (decimal * saldo)
+    saldo = saldo + mes
+    total = total + mes 
+    saldo = saldo + (saldo * decimal)
     print(f"Mes {contador} saldo: {saldo:.2f}")
     contador += 1
-#calcula e imprime os juros
+
 juros = saldo - inicial
 print(f"O juros é de R${juros:.2f}")
