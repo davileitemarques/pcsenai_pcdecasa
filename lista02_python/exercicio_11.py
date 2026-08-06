@@ -1,5 +1,5 @@
 
-sonumeros = ""
+sonumeros = None
 
 while True:
     cpf = input("Digite seu cpf contendo exatamente 11 digitos (sem pontos e tracos): ")
@@ -11,7 +11,7 @@ while True:
     if sonumeros == True:
         break
     else:
-        print("Digite os 11 numeros do CPF (sem pontos ou traços)")
+        print("CPF INVALIDO!, Digite os 11 numeros do CPF (sem pontos ou traços)")
          
 primeirocima = (int(cpf[0])) * 10
 segundocima = (int(cpf[1])) * 9
