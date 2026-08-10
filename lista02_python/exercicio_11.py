@@ -1,5 +1,4 @@
-
-sonumeros = ""
+sonumeros = None
 
 while True:
     cpf = input("Digite seu cpf contendo exatamente 11 digitos (sem pontos e tracos): ")
