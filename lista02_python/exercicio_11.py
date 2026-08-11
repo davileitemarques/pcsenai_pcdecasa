@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8e75f6d1acebacdbe8f0001e91077a5806a159bd
 sonumeros = None
 
 while True:

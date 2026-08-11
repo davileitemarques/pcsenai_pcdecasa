@@ -4,5 +4,5 @@ b = float(input("Digite o valor do quociente B: "))
 c = float(input("Digite o valor do quociente C: "))
 #Calcule o delta
 delta = (b ** 2 - 4 * a * c)
-#Imprima o resultado
+#Imprima o resultado na tela 
 print(f"Resultado do delta é {delta}")
