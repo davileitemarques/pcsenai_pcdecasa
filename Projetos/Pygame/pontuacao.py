@@ -74,6 +74,6 @@ while True:
     #Se o quadrado verde for menor que a parte de cima da tela, que é = 0, logo ele saiu da tela, entao o programa é terminado/exit
                                                 #ou
     #Se o quadrado verde mais a soma de seu tamanho (para garantir que a partir do momento da colisao, a condicao acontecerá) for maior que a altura, no caso a parte de cima da tela, entao o programa é terminado
-    if (x < 0 or x + 50 > largura) or (y < 0 or y + 50 > altura):
+    if (x < 0 or x + 50 > largura) or (y < 0 or y + 50 > altura):                  
         exit()
     pygame.display.update()
