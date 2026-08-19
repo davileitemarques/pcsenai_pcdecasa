@@ -4,6 +4,15 @@ from pygame.locals import *
 from sys import exit
 # Importa a funcao de escolher numeros inteiros aleatorios (randint) da biblioteca random
 from random import randint
+import os
+import sys
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
  
 pygame.init()
 pygame.mixer.init()
@@ -21,15 +30,15 @@ fonte_fim = pygame.font.SysFont("arial", 40, bold=True)
 pygame.display.set_caption("Rayquaza vs Deoxys")
 relogio = pygame.time.Clock()
 tela = pygame.display.set_mode((largura, altura))
-fundo = pygame.image.load("fundo.png").convert()
-musica = pygame.mixer.music.load("music.mp3")
+fundo = pygame.image.load(resource_path("fundo.png")).convert()
+musica = pygame.mixer.music.load(resource_path("music.mp3"))
 pygame.mixer.music.play(-1)
 pygame.mixer.music.set_volume(0.5)
-hit = pygame.mixer.Sound("hitsound.mp3")
+hit = pygame.mixer.Sound(resource_path("hitsound.mp3"))
 hit.set_volume(0.5)
-vencer = pygame.mixer.Sound("win.mp3")
+vencer = pygame.mixer.Sound(resource_path("win.mp3"))
 vencer.set_volume(0.5)
-gameover = pygame.mixer.Sound("game_over.mp3")
+gameover = pygame.mixer.Sound(resource_path("game_over.mp3"))
 gameover.set_volume(0.5)
 # A cobra é uma lista de posições (x, y). O primeiro item é a cabeça.
 cobra = [(largura // 2, altura // 2)]
@@ -62,14 +71,13 @@ while True:
     if (cabeca_x < 0 or cabeca_x + tamanho_bloco > largura) or (cabeca_y < 0 or cabeca_y + tamanho_bloco > altura) or morte:
         pygame.mixer.music.stop()
         gameover.play()
+        texto_fim = fonte_fim.render("GAME OVER", True, (255, 0, 0))
+        tela.blit(texto_fim, (largura // 2 - 120, altura // 2 - 50))
+        texto_formatado = f"Pontuação: {pontos}"
+        texto_renderizado = fonte_gameover.render(texto_formatado, True, (255, 255, 0))
+        tela.blit(texto_renderizado, (largura // 2 - 87, altura // 2 - 13))
+        pygame.display.update()
         while True:
-            texto_fim = fonte_fim.render("GAME OVER", True, (255, 0, 0))
-            tela.blit(texto_fim, (largura // 2 - 120, altura // 2 - 50))
-            texto_formatado = f"Pontuação: {pontos}"
-            texto_renderizado = fonte_gameover.render(texto_formatado, True, (255, 255, 0))
-            tela.blit(texto_renderizado, (largura // 2 - 87, altura // 2 - 13))
-            pygame.display.update()
-        
             for event in pygame.event.get():
                 if event.type == QUIT:
                     exit()           
@@ -78,10 +86,10 @@ while True:
     if pontos >= 10:
         pygame.mixer.music.stop()
         vencer.play()
+        texto_fim = fonte_fim.render("VENCEDOR!", True, (255, 0, 0))
+        tela.blit(texto_fim, (largura // 2 - 110 ,  altura // 2 - 40))
+        pygame.display.update()
         while True:
-            texto_fim = fonte_fim.render("VENCEDOR!", True, (255, 0, 0))
-            tela.blit(texto_fim, (largura // 2 - 110 ,  altura // 2 - 40))
-            pygame.display.update()
             for event in pygame.event.get():
                 if event.type == QUIT:
                     exit()
