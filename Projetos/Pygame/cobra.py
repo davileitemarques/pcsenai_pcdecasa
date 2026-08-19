@@ -74,17 +74,13 @@ while True:
                 if event.type == QUIT:
                     exit()           
 
-
     # Condição de VITÓRIA (Fim do jogo ao alcançar 10 pontos)
     if pontos >= 10:
         pygame.mixer.music.stop()
         vencer.play()
-
         while True:
             texto_fim = fonte_fim.render("VENCEDOR!", True, (255, 0, 0))
-            tela.blit(texto_fim, (largura // 2 - 100 ,  altura // 2 - 40))
-            pygame.mixer.music.stop()
-            vencer.play()
+            tela.blit(texto_fim, (largura // 2 - 110 ,  altura // 2 - 40))
             pygame.display.update()
             for event in pygame.event.get():
                 if event.type == QUIT:
