@@ -43,7 +43,7 @@ gameover.set_volume(0.5)
 # A cobra é uma lista de posições (x, y). O primeiro item é a cabeça.
 cobra = [(largura // 2, altura // 2)]
 direcao = (0, 0)       # direção atual do movimento
-proxima_direcao = direcao          # direção escolhida pelo jogador, aplicada no próximo passo
+proxima_direcao = direcao  # direção escolhida pelo jogador, aplicada no próximo passo
  
 def nova_posicao_azul(cobra):
     # Sorteia uma posição alinhada à grade que não esteja em cima da cobra
@@ -82,7 +82,7 @@ while True:
                 if event.type == QUIT:
                     exit()           
 
-    # Condição de VITÓRIA (Fim do jogo ao alcançar 10 pontos)
+    # Condicional de vitoria, se chegar aos 45 pts o jogador vence
     if pontos >= 45:
         pygame.mixer.music.stop()
         vencer.play()
@@ -99,7 +99,7 @@ while True:
     
     proxima_direcao = (0, 0)
     teclas = pygame.key.get_pressed()
-            # A checagem "direcao != oposto" impede que a cobra vire 180° sobre si mesma
+     # A checagem "direcao != oposto" impede que a cobra trombe nela mesma
     if (teclas[K_a] or teclas[K_LEFT]) and direcao != (tamanho_bloco, 0):
         proxima_direcao = (-tamanho_bloco, 0)
     elif (teclas[K_d] or teclas[K_RIGHT]) and direcao != (-tamanho_bloco, 0):

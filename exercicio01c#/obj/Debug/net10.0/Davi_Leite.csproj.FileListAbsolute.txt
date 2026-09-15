@@ -1,0 +1,15 @@
+c:\Users\Tec Info Manhã\Desktop\Davi_Leite\exercicio01c#\bin\Debug\net10.0\Davi_Leite.exe
+c:\Users\Tec Info Manhã\Desktop\Davi_Leite\exercicio01c#\bin\Debug\net10.0\Davi_Leite.deps.json
+c:\Users\Tec Info Manhã\Desktop\Davi_Leite\exercicio01c#\bin\Debug\net10.0\Davi_Leite.runtimeconfig.json
+c:\Users\Tec Info Manhã\Desktop\Davi_Leite\exercicio01c#\bin\Debug\net10.0\Davi_Leite.dll
+c:\Users\Tec Info Manhã\Desktop\Davi_Leite\exercicio01c#\bin\Debug\net10.0\Davi_Leite.pdb
+c:\Users\Tec Info Manhã\Desktop\Davi_Leite\exercicio01c#\obj\Debug\net10.0\Davi_Leite.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Tec Info Manhã\Desktop\Davi_Leite\exercicio01c#\obj\Debug\net10.0\Davi_Leite.AssemblyInfoInputs.cache
+c:\Users\Tec Info Manhã\Desktop\Davi_Leite\exercicio01c#\obj\Debug\net10.0\Davi_Leite.AssemblyInfo.cs
+c:\Users\Tec Info Manhã\Desktop\Davi_Leite\exercicio01c#\obj\Debug\net10.0\Davi_Leite.csproj.CoreCompileInputs.cache
+c:\Users\Tec Info Manhã\Desktop\Davi_Leite\exercicio01c#\obj\Debug\net10.0\Davi_Leite.sourcelink.json
+c:\Users\Tec Info Manhã\Desktop\Davi_Leite\exercicio01c#\obj\Debug\net10.0\Davi_Leite.dll
+c:\Users\Tec Info Manhã\Desktop\Davi_Leite\exercicio01c#\obj\Debug\net10.0\refint\Davi_Leite.dll
+c:\Users\Tec Info Manhã\Desktop\Davi_Leite\exercicio01c#\obj\Debug\net10.0\Davi_Leite.pdb
+c:\Users\Tec Info Manhã\Desktop\Davi_Leite\exercicio01c#\obj\Debug\net10.0\Davi_Leite.genruntimeconfig.cache
+c:\Users\Tec Info Manhã\Desktop\Davi_Leite\exercicio01c#\obj\Debug\net10.0\ref\Davi_Leite.dll
